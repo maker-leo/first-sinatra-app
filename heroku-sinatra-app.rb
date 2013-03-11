@@ -7,6 +7,11 @@
 #
 require 'rubygems'
 require 'sinatra'
+require "sinatra/reloader" if development?
+
+
+# for templates
+# require 'erb'
 
 configure :production do
   # Configure stuff here you'll want to
