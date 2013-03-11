@@ -17,3 +17,4 @@ First things first, create an app on Heroku which we will deploy our website to.
 
 * If you're stuck, use google, stack overflow (if you don't have an account yet create one now!), the [sinatra documentation](http://www.sinatrarb.com/intro.html) or books like [this one](http://sinatra-book.gittr.com/) (completely available online)
 * Once you've done getting something simple online, try adding an [HTML template](http://sinatra-book.gittr.com/#templates)
+* Add css and put it into your public directory
