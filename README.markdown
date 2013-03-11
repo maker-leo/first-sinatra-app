@@ -1,30 +1,19 @@
-# Here is a sample/template sinatra application ready for deployment to [Heroku](http://heroku.com).
+# First Sinatra App - to be deployed on [Heroku](http://heroku.com)
 
-**NOTE** This is for heroku.com and not herokugarden.com
+This is the outline for a [Sinatra](http://www.sinatrarb.com/) app you're going to use to create a live website by the end of the day.
 
-* Create an acount in seconds at [Heroku](http://heroku.com/signup).
-* Install the gem `sudo gem install heroku`.
-* If you do not have an SSH key
-you'll need to [generate
-one](http://heroku.com/docs/index.html#_setting_up_ssh_public_keys)
-and [tell Heroku about
-it](http://heroku.com/docs/index.html#_manage_keys_on_heroku)
-* Clone this repo `git clone git://github.com/sinatra/heroku-sinatra-app [appname]`
-* `cd /path/to/project`
-* `heroku create [optional-app-name]` (You can rename your app with `heroku rename`)
-* `git push heroku master`
+## Setting up your Heroku app
+
+First things first, create an app on Heroku which we will deploy our website to.
+
+* Create an account at [Heroku](http://heroku.com/signup).
+* If you haven't done so already install the Heroku toolbelt, and login from the command line by typing `heroku auth:login`
+* You need to authenticate with Heroku in order to deploy, follow [these instructions](https://devcenter.heroku.com/articles/keys)
+* Make sure in your terminal you're in the first-sinatra-app directory, then create a Heroku app by typing `heroku create`
+* Push your app to heroku by typing `git push heroku master`
+* Go online to your heroku account online and find the url from where you can view your app
 
 **NOTES**
 
-The small amount of code is heavily commented. If you have questions
-or comments please use [the channels provided](http://www.sinatrarb.com/contributing.html) by the Sinatra community as
-we at Heroku are heavily involved in Sinatra.  Please use the Heroku [mailing list](http://groups.google.com/group/heroku) if you
-have non Sinatra questions.
-
-See [these guidelines](http://www.sinatrarb.com/contributing.html) for
-contributing or bugs.
-
-Happy Development and Deploying!
-
-Sincerely,
-The Heroku Team
+* If you're stuck, use google, stack overflow (if you don't have an account yet create one now!), the [sinatra documentation](http://www.sinatrarb.com/intro.html) or books like [this one](http://sinatra-book.gittr.com/) (completely available online)
+* Once you've done getting something simple online, try adding an [HTML template](http://sinatra-book.gittr.com/#templates)

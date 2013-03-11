@@ -1,38 +1,20 @@
-# You'll need to require these if you
-# want to develop while running with ruby.
-# The config/rackup.ru requires these as well
-# for it's own reasons.
+# Remember to run the server when testing locally
+# by going ruby heroku-sinatra-app.rb
+# then go to localhost:4567 in your browser
 #
-# $ ruby heroku-sinatra-app.rb
-#
-require 'rubygems'
+require 'bundler/setup'
 require 'sinatra'
-require "sinatra/reloader" if development?
+require 'sinatra/reloader' if development?
 
 
-# for templates
+# for templates uncomment the line below
 # require 'erb'
 
-configure :production do
-  # Configure stuff here you'll want to
-  # only be run at Heroku at boot
 
-  # TIP:  You can get you database information
-  #       from ENV['DATABASE_URI'] (see /env route below)
-end
 
-# Quick test
 get '/' do
-  "Congradulations!
-   You're running a Sinatra application on Heroku!"
+  # This will be your default route
+  'change me!'
 end
 
-# Test at <appname>.heroku.com
-
-# You can see all your app specific information this way.
-# IMPORTANT! This is a very bad thing to do for a production
-# application with sensitive information
-
-# get '/env' do
-#   ENV.inspect
-# end
+# Test at <appname>.heroku.com (you'll need to create your app first!)
