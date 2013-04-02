@@ -6,9 +6,18 @@ require 'bundler/setup'
 require 'sinatra'
 require 'sinatra/contrib'
 
+require 'data_mapper'
+
+database = "test_db"
+connection = "postgres://localhost/#{database}"
+
+# This means it will work with Heroku as well, since Heroku sets ENV['DATABASE_URL']
+# in its postgres addon
+DataMapper.setup(:default, ENV['DATABASE_URL'] || connection)
+DataMapper.finalize.auto_migrate!
 
 # for templates uncomment the line below
-# require 'erb'
+require 'erb'
 
 
 
